@@ -1,0 +1,32 @@
+---
+title: Interactively Explore Animal Spatial Data
+author: Josh Cullen
+date: '2021-10-23'
+slug: interactively-explore-animal-spatial-data
+categories: []
+tags: 
+  - R
+  - Shiny
+  - animal movement
+  - exploratory analysis
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-10-23T10:27:19-04:00'
+featured: yes
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+runtime: shiny
+---
+
+Animal spatial data can be difficult to explore and clean for subsequent analyses, especially when trying to explore the raw data. These data can either be independent point locations of sightings or trajectories of animal movement from telemetry data. This post includes a version of the interactive Shiny app as part of the [bayesmove](https://joshcullen.github.io/bayesmove) package, but allows users to explore their data directly from a web browser instead of needing to code in R. Users can explore data from multiple individuals, map these locations, and filter the data, which can then be exported for further analysis. Alternatively, users can also access this app online at [shinyapps.io](https://joshcullen.shinyapps.io/segmentation_of_NSD/).
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(shiny)
+shinyAppFile(appFile = "~/Documents/Snail Kite Project/Data/R Scripts/ValleLabUF/segment_continuous_var/app.R",
+             options = list(width = "100%", height = 700))
+```
+

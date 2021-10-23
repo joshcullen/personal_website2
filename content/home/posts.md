@@ -1,15 +1,15 @@
 ---
 # An instance of the Pages widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: 
+widget: pages
 
 # This file represents a page section.
 headless: true
 
 # Order that this section appears on the page.
-weight: 50
+weight: 30
 
-title: 
+title: Posts
 subtitle:
 
 content:
