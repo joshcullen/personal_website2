@@ -9,6 +9,7 @@ tags:
   - Shiny
   - animal movement
   - exploratory analysis
+  - telemetry
 subtitle: ''
 summary: ''
 authors: []
@@ -17,7 +18,7 @@ featured: yes
 image:
   caption: ''
   focal_point: ''
-  preview_only: no
+  preview_only: yes
 projects: []
 runtime: shiny
 ---
@@ -26,9 +27,9 @@ Animal spatial data can be difficult to explore and clean for subsequent analyse
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(shiny)
-# shinyAppFile(appFile = "~/Documents/Snail Kite Project/Data/R Scripts/ValleLabUF/segment_continuous_var/app.R",
-#              options = list(width = "100%", height = 700))
-knitr::include_url("https://joshcullen.shinyapps.io/segmentation_of_NSD/",
-                   height = "700px")
+shinyAppFile(appFile = "~/Documents/Snail Kite Project/Data/R Scripts/ValleLabUF/segment_continuous_var/app.R",
+             options = list(width = "100%", height = 700))
+# knitr::include_url("https://joshcullen.shinyapps.io/segmentation_of_NSD/",
+#                    height = "700px")
 ```
 
